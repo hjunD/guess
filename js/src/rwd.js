@@ -18,7 +18,7 @@
 
   } else if (winWidth > 1024 && winWidth <= 1366){
       /* pc */
-      h1.text('pc으로 변경되었습니다.');
+      h1.text('pc화면으로 처리되었습니다.');
 
   } else {
       /* pcful */
@@ -26,8 +26,10 @@
 
 // 브라우저 사이즈(가로) 변경시 새로고침 =======
 $(window).on('resize',function() {
-
-  location.reload();
+  var _nowWidth = $(window).width();
+  if(winWidth !== _nowWidth){
+    location.reload();
+  }
 
 });
 
