@@ -1,0 +1,15 @@
+
+# photoshop
+**/*.psd
+**/*.psb
+
+# illustrator
+**/*.ai
+**/*.eps
+
+# prepros 颇老 力茄
+**/*.config
+
+# node_modules/ 颇老 力茄
+**/node_modules
+**/notUploadGit
